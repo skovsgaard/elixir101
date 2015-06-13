@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,700,500|Source+Code+Pro:500);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('https://avatars2.githubusercontent.com/u/1481354?v=3&s=200');
+  background-position: 550px 60px;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-color: #e8e8e8;
+}
+
+p {
+  font-weight: normal;
+}
+
+blockquote {
+  border-left: 5px solid #858;
+  padding-left: 20px;
+  margin-left: 0;
+  font-style: italic;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+}
+
+blockquote ~ ul {
+  list-style: inside none;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.slidewrap {
+  background-color: #f1f1f1;
+  padding: 20px 50px;
+  width: 500px;
+  height: 300px;
+  margin: 200px auto;
+  border-radius: 20px;
+}

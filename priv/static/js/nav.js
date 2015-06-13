@@ -30,8 +30,8 @@ document.addEventListener('keypress', function(e) {
     return prevPage()
   }
 
-  if (e.keyCode == '39' && currLocation !== 10) {return nextPage()} // Hardcode this limit, I guess
+  if (e.keyCode == '39' && currLocation < 10) {return nextPage()} // Hardcode this limit, I guess
   return false
 });
 
-document.addEventListener('click', nextPage);
+// document.addEventListener('click', nextPage);

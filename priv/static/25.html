@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/slide.css" />
+  </head>
+  <body>
+    <div class="slidewrap">
+<h1>Streams |> Enum</h1>
+<p>Streams are lazy enumerables, i.e. ones that don’t have to end.</p>
+<pre><code class="elixir">1..100_000
+|&gt; Stream.map(fn(item) -&gt; item - 1 end)
+|&gt; Stream.filter(fn(item) -&gt; rem(item, 5) == 0 end)
+|&gt; Enum.each(&amp;IO.puts/1)</code></pre>
+    </div>
+    <script src="/js/nav.js"></script>
+  </body>
+</html>

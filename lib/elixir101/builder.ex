@@ -6,8 +6,6 @@ defmodule Elixir101.Builder do
     <head>
       <meta charset="utf-8" />
       <link rel="stylesheet" href="/css/slide.css" />
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
     </head>
     <body>
       <div class="slidewrap">

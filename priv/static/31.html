@@ -5,12 +5,11 @@
   </head>
   <body>
     <div class="slidewrap">
-<h1>No else if or buts</h1>
-<pre><code class="elixir">case (curr_mood) do
-  :terrible -&gt; &quot;Sorry to hear&quot;
-  :mediocre -&gt; &quot;Oh...&quot;
-  :great -&gt; &quot;Yay!&quot;
-  _ -&gt; &quot;What is it, then?&quot;
+<h1>Macros</h1>
+<pre><code class="elixir">defmacro unless(clause, options) do
+  quote do
+    if(!unquote(clause), do: unquote(options))
+  end
 end</code></pre>
     </div>
     <script src="/js/nav.js"></script>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/slide.css" />
+  </head>
+  <body>
+    <div class="slidewrap">
+<h1>Recursion</h1>
+<pre><code class="elixir"># say_hi/1
+def say_hi(name), do: IO.puts(&quot;Hi, #{name}&quot;)
+
+# say_hi/2
+def say_hi(name, n) when n &lt;= 1, do: say_hi(name)
+def say_hi(name, n) do
+  IO.puts(&quot;Hi, #{name}&quot;)
+  say_hi(name, n-1)
+end</code></pre>
+    </div>
+    <script src="/js/nav.js"></script>
+  </body>
+</html>

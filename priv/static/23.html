@@ -5,13 +5,12 @@
   </head>
   <body>
     <div class="slidewrap">
-<h1>No else if or buts</h1>
-<pre><code class="elixir">case (curr_mood) do
-  :terrible -&gt; &quot;Sorry to hear&quot;
-  :mediocre -&gt; &quot;Oh...&quot;
-  :great -&gt; &quot;Yay!&quot;
-  _ -&gt; &quot;What is it, then?&quot;
+<h1>Streams |> Enum</h1>
+<pre><code class="elixir">Enum.map [1,2,3,4], fn(num) -&gt;
+  num * num
 end</code></pre>
+<p>or with the shorthand syntax</p>
+<pre><code class="elixir">Enum.map [1,2,3,4], &amp;(&amp;1 * &amp;1)</code></pre>
     </div>
     <script src="/js/nav.js"></script>
   </body>

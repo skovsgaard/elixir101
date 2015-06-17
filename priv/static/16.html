@@ -2,12 +2,17 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/slide.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
   </head>
   <body>
     <div class="slidewrap">
-<h1>Modules</h1>
+<h1>Pattern matching</h1>
+<pre><code class="elixir">def say_hi(name), do: IO.puts(&quot;Hi, #{name}&quot;)
+def say_hi(name, weather) do
+  IO.puts &quot;Hi #{name}. Lovely #{weather} we&#39;re having, huh?&quot;
+end
+
+say_hi(&quot;Fred&quot;, &quot;sunshine&quot;)
+# &gt; Hi, Fred. Lovely sunshine we&#39;re having, huh?</code></pre>
     </div>
     <script src="/js/nav.js"></script>
   </body>

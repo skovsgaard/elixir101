@@ -26,25 +26,27 @@ defmodule Elixir101.Slides do
     """
     # So why Elixir, then?
 
+    * The BEAM languages, Erlang, Elixir and Lisp Flavored Erlang
+    are not purely functional
+
+    """,
+
+    """
+    # So why Elixir, then?
+
+    * The BEAM languages, Erlang, Elixir and Lisp Flavored Erlang
+    are not purely functional
+
     * The world isn't pure.
     """,
 
     """
     # So why Elixir, then?
 
-    * The world isn't pure.
-
     * The BEAM languages, Erlang, Elixir and Lisp Flavored Erlang
     are not purely functional
-    """,
-
-    """
-    # So why Elixir, then?
 
     * The world isn't pure.
-
-    * The BEAM languages, Erlang, Elixir and Lisp Flavored Erlang
-    are not purely functional
 
     * Sometimes things change and things inside computers do too. And it's okay to deal with that.
     """,
@@ -77,7 +79,21 @@ defmodule Elixir101.Slides do
     """,
 
     """
+    # Maps and keyword lists
+
+    * `[key: "value"]`
+    * `%{key: "value"}`
+    """,
+
+    """
     # Structs
+
+    ```elixir
+    defmodule Person do
+      defstruct name: "defaultname", age: 20
+      @type t :: %Person{name: String.t, age: integer}
+
+    ```
     """,
 
     """

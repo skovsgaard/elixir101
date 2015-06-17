@@ -30,8 +30,11 @@ document.addEventListener('keypress', function(e) {
     return prevPage()
   }
 
-  if (e.keyCode == '39' && currLocation < 19) {return nextPage()} // Hardcode this limit, I guess
+  if (e.keyCode == '39' && currLocation < 20) {return nextPage()} // Hardcode this limit, I guess
   return false
 });
 
 // document.addEventListener('click', nextPage);
+
+//Should've been in a separate file but lazy
+hljs.initHighlightingOnLoad();
